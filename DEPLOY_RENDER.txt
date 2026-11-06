@@ -1,0 +1,22 @@
+RENDER PAR DEPLOY KAISE KAREN (Hindi steps)
+
+A) GitHub par upload
+ 1. github.com -> New repository -> naam: baleshwar-txt -> Create.
+ 2. "uploading an existing file" par click karo.
+ 3. Is folder ke ANDAR ki saari files + baleshwar_txt_565 folder drag-drop karo
+    (main.py, requirements.txt, render.yaml sab repo ke root me dikhni chahiye).
+ 4. Commit changes dabao.
+
+B) Render par Web Service
+ 1. render.com -> New + -> Web Service.
+ 2. GitHub connect karke baleshwar-txt repo chuno.
+ 3. Settings:
+      Language/Runtime : Python 3
+      Build Command    : pip install -r requirements.txt
+      Start Command    : python main.py
+      Instance Type    : Free
+ 4. Create Web Service dabao.
+ 5. Logs me "Web Dashboard" line aane ke baad upar diya gaya
+    https://....onrender.com link Chrome me kholo.
+
+Port set karne ki zarurat nahi, code Render ka PORT khud padh leta hai.
